@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:regular,500,600,700,800,900);
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,4 +21,42 @@ body{
 #navbar > li {
     margin: 10px;
     padding: 10px;
+}
+
+#navbar > li:hover {
+    color: #a81f17;
+}
+
+/* /////////////////////////////// */
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Show the first slide initially */
+.slide:first-child {
+    display: block;
+}
+
+/* Fade animation for the slides */
+.fade {
+    animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    20%,
+    80% {
+        opacity: 1;
+    }
+}
+
+/* Optional: Set a fixed height for the slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: auto; /* Set your desired height here */
+    overflow: hidden;
 }
