@@ -18,11 +18,21 @@
             </div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>Admission</li>
-                    <li>Facility</li>
-                    <li>Faculty</li>
-                    <li>Result</li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="admission.html">
+                        <li>Admission</li>
+                    </a>
+                    <a href="facility.html" class="">
+                        <li>Facility</li>
+                    </a>
+                    <a href="faculty.html" class="">
+                        <li>Faculty</li>
+                    </a>
+                    <a href="result.html" class="">
+                        <li>Result</li>
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -30,21 +40,29 @@
     <section class="sec">
         <div class="leftsec">
             A school where
-        <span id="element"></span>
+            <span id="element"></span>
 
         </div>
         <div class="rightsec">
             Lorem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sapiente!
         </div>
     </section>
+    <section class="truth">
+        <h1>10 Truths of MPS</h1>
+        <span id="element2"></span>
+    </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['memories we made.', 'our partents wasted their money.'],
-      typeSpeed: 50,
-    });
-  </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed( '#element', {
+            strings: [ 'memories we made.', 'our partents wasted their money.' ],
+            typeSpeed: 50,
+        } )
+        var typed = new Typed( '#element2', {
+            strings: [ '1. Unnecessary Strict Rules', '2. Absuive Teachers', '3. Toxic Environment','4. Discrimination b/w boys and Girls','5. Cheap Mindset of Teachers and Examination Conductor','6. School forces to waste money in unnecessary items.','7. Teachers makes minimum efforts to clearfy doubts of students.','8. Hostel is like cage with unhygienic rooms.','9. All teachers and students talks in every other languages except ENGLISH, (Some Teachers do talk in English)','10. At end of the last 5 months, every teachers lightly teach stuffs to cover all syllabus fast.'],
+            typeSpeed: 50,
+        } );
+    </script>
 </body>
 
 </html>
