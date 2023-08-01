@@ -4,46 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mpsckp.com</title>
+    <title>mpsckp</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
-    <div id="pg1">
-        <nav id="line1">
-            <img src="imgs/mps_logo.webp" alt="mps-">
-            <img src="imgs/mpslogo.webp" alt="">
-            <ul id="navbar">
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>ACADEMIC</li>
-                <li>ADMISSION</li>
-                <li>FACILITY</li>
-                <li>FACULTY</li>
-                <li>RESULT</li>
-                <li>GALLERY</li>
-                <li>CONTACT US</li>
-            </ul>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <img src="imgs/mps_logo.webp" alt="">
+                MADHUSUDAN PUBLIC SCHOOL
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>Admission</li>
+                    <li>Facility</li>
+                    <li>Faculty</li>
+                    <li>Result</li>
+                </ul>
+            </div>
         </nav>
-        <div class="slideshow-container">
-            <div class="slide fade">
-              <img src="imgs/slides/img1.png" alt="Image 1">
-            </div>
-            <div class="slide fade">
-              <img src="imgs/slides/img2.png" alt="Image 2">
-            </div>
-            <div class="slide fade">
-              <img src="imgs/slides/img3.png" alt="Image 3">
-            </div>
-            <div class="slide fade">
-              <img src="imgs/slides/img4.png" alt="Image 4">
-            </div>
-            <div class="slide fade">
-                <img src="imgs/slides/img5.png" alt="Image 4">
-              </div>
-          </div>
+    </header>
+    <section class="sec">
+        <div class="leftsec">
+            A school where
+        <span id="element"></span>
+
         </div>
-        <script src="script.js"></script>
-    </body>
+        <div class="rightsec">
+            Lorem, Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sapiente!
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['memories we made.', 'our partents wasted their money.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
 
 </html>
