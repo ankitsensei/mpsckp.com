@@ -10,7 +10,7 @@ function Btn({ title, className }) {
 
 Btn.defaultProps = {
     title: 'click',
-    className: 'bg-red-500 w-40 h-10',
+    className: 'bg-zinc-50 text-zinc-950 w-24 h-10 outline-none rounded-lg',
 };
 
 export default Btn;
