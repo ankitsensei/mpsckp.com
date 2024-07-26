@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import Btn from './Btn';
+import MainLogo from './assets/imgs/mpslogo.webp';
 
 function NavBar() {
     const [menuVisible, setMenuVisible] = useState(false);
@@ -12,10 +13,13 @@ function NavBar() {
 
     return (
         <div className='relative select-none'>
-            <nav className='flex justify-between items-center px-10 py-5 bg-gray-600'>
-                <h1 className='text-white text-xl font-semibold'>mpsckp</h1>
+            <nav className='flex justify-between items-center px-10 py-5 bg-[#ffb22c]'>
+                <div className='flex items-center gap-4 select-none'>
+                    <img className='w-40 h-14' src={MainLogo} alt='#' />
+                </div>
+
                 <button
-                    className='relative flex items-center px-4 justify-between bg-gray-700 text-white w-48 h-10 rounded-lg hover:bg-gray-600 active:bg-gray-500 select-none'
+                    className='relative flex items-center px-4 justify-between bg-[#FFDE4D] text-white w-48 h-10 rounded-lg hover:bg-[#FFB22C] active:bg-[#c7ae3f] select-none'
                     onClick={toggleMenu}
                 >
                     <span>Menu</span>
@@ -25,7 +29,7 @@ function NavBar() {
                     />
                 </button>
                 {menuVisible && (
-                    <div className='absolute right-10 top-16 flex flex-col w-48 bg-white text-gray-800 rounded-lg shadow-lg z-50'>
+                    <div className='absolute right-10 top-16 flex flex-col w-48 border-zinc-900 bg-[#FFB22C] text-gray-800 rounded-lg shadow-lg z-50'>
                         <ul id='menuItems' className='flex flex-col py-2'>
                             <li className='px-4 py-2 hover:bg-gray-200'>
                                 <a href='#'>Home</a>
