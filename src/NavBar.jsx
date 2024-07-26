@@ -11,7 +11,7 @@ function NavBar() {
     };
 
     return (
-        <div className='relative'>
+        <div className='relative select-none'>
             <nav className='flex justify-between items-center px-10 py-5 bg-gray-600'>
                 <h1 className='text-white text-xl font-semibold'>mpsckp</h1>
                 <button
